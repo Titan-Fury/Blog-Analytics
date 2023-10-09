@@ -7,8 +7,8 @@ const fetchBlogDataMiddleware = async (req, res, next) => {
         req.blogData = globalBlogData;
         next();
     } else {
-        const apiUrl = 'https://intent-kit-16.hasura.app/api/rest/blogs';
-        const adminSecret = '32qR4KmXOIpsGPQKMqEJHGJS27G5s7HdSKO3gdtQd2kv5e852SiYwWNfxkZOBuQ6';
+        const apiUrl = 'https://example.com/api/rest/blogs'; // Replace with your API endpoint
+        const adminSecret = 'your-admin-secret'; // Replace with your admin secret
 
         try {
             const response = await fetch(apiUrl, {
